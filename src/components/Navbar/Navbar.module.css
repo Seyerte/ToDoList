@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika&display=swap');
+
+:root {
+    --green:#90AD9C;
+    --champagne: #FFE5D9;
+    --mountbatten: #9D8189;
+    --black: #000000;
+    --white: #ffffff;
+}
+
+.navContainer{
+    display: grid;
+    place-items: center;
+}
+
+.divTitle{
+    font-size:25px;
+    font-family: 'Andika', sans-serif;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 15px;
+}
+
+.titleTo{
+    color: #9D8189;  
+}
+
+.titleDo{
+    color:#90AD9C;
+}
+
+.titleList{
+    color: #9D8189;
+    
+}
+
+.navImg {
+    height: 300px;
+
+}

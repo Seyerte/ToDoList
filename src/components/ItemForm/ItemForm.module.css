@@ -1,0 +1,45 @@
+:root {
+    --green:#90AD9C;
+    --champagne: #FFE5D9;
+    --mountbatten: #9D8189;
+    --black: #000000;
+    --white: #ffffff;
+}
+
+.inputContainer{
+    display: grid;
+    place-items: center;
+}
+
+.input {
+    background-color:#ffffff;
+    border: solid 2px #9D8189;
+    border-radius: 5px;
+    font-size: large;
+}
+
+.buttonContainer{
+    display: flex;
+    margin-top: 10px;
+    gap: 20px;
+}
+
+.button1 {
+    border: 1px;
+    width: 79px;
+    height: 34px;
+    left: 167px;
+    top: 51px;
+    background: #90AD9C;
+    border-radius: 10px;
+}
+
+.button2 {
+    border: 1px;
+    width: 79px;
+    height: 34px;
+    left: 167px;
+    top: 51px;
+    background: #90AD9C;
+    border-radius: 10px;
+}
