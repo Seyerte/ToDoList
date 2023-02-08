@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Andika&display=swap');
 
 :root {
     --green:#90AD9C;
@@ -16,6 +15,7 @@
 .divTitle{
     font-size:25px;
     font-family: 'Andika', sans-serif;
+    /* font-family: 'Sassy Frass', cursive; */
     display: flex;
     margin: 0;
     justify-content: center;

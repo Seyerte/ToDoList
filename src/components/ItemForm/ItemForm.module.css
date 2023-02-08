@@ -24,7 +24,7 @@
     gap: 20px;
 }
 
-.button1 {
+.buttonAdd {
     border: 1px;
     width: 79px;
     height: 34px;
@@ -34,7 +34,40 @@
     border-radius: 10px;
 }
 
-.button2 {
+.buttonUpdate {
+    border: 1px;
+    width: 79px;
+    height: 34px;
+    left: 167px;
+    top: 51px;
+    background: #90AD9C;
+    border-radius: 10px;
+}
+.filterItems{
+    display: flex;
+    margin-top: 10px;
+    gap: 20px;
+
+}
+.buttonAll {
+    border: 1px;
+    width: 79px;
+    height: 34px;
+    left: 167px;
+    top: 51px;
+    background: #90AD9C;
+    border-radius: 10px;
+}
+.buttonPending {
+    border: 1px;
+    width: 79px;
+    height: 34px;
+    left: 167px;
+    top: 51px;
+    background: #90AD9C;
+    border-radius: 10px;
+}
+.buttonDone {
     border: 1px;
     width: 79px;
     height: 34px;
