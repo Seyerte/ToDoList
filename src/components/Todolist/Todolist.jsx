@@ -1,5 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
+import Item from "../Item/Item";
+import styles from "./Todolist.module.css";
+
+const itemsList = [
+    {
+        id: "1",
+        title: "Study programming",
+        isDone: false,
+    },
+    {
+        id: "2",
+        title: "Call my friend",
+        isDone: true,
+    },
+    {
+        id: "3",
+        title: "Go shopping",
+        isDone: false,
+    },
+    {
+        id: "4",
+        title: "Water plants",
+        isDone: true,
+    },
+];
 
 export const Todolist = () => {
-    return <div></div>;
+    const [data, setData] = useState(itemsList);
+
+    const deleteById = (idToDelete) => {
+        console.log(idToDelete);
+        const newData = data.filter((item) => item.id !== idToDelete);
+        setData(newData);
+    };
+
+    return (
+        <div className={styles.mainContainer}>
+            <ul>
+                {data.map((item) => (
+                    <Item key={item.id} item={item} deleteById={deleteById} />
+                ))}
+            </ul>
+        </div>
+    );
 };
