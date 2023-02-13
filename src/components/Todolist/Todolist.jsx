@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import Item from "../Item/Item";
+import Navbar from "../Navbar/Navbar";
 import styles from "./Todolist.module.css";
+import ItemForm from "../ItemForm/ItemForm";
+import { v4 as uuid } from "uuid";
 
 const itemsList = [
     {
@@ -25,7 +28,7 @@ const itemsList = [
     },
 ];
 
-export const Todolist = () => {
+export default function Todolist() {
     const [data, setData] = useState(itemsList);
 
     const deleteById = (idToDelete) => {
@@ -34,8 +37,19 @@ export const Todolist = () => {
         setData(newData);
     };
 
+    const addItem = (value) => {
+        const newItem = {
+            id: uuid(),
+            title: value,
+            isDone: false,
+        };
+        setData([...data, newItem]);
+    };
+
     return (
         <div className={styles.mainContainer}>
+            <Navbar />
+            <ItemForm addItem={addItem} />
             <ul>
                 {data.map((item) => (
                     <Item key={item.id} item={item} deleteById={deleteById} />
@@ -43,4 +57,4 @@ export const Todolist = () => {
             </ul>
         </div>
     );
-};
+}

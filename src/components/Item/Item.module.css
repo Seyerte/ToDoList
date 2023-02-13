@@ -1,0 +1,39 @@
+.itemContainer {
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.list{
+    padding-left: 0px;
+    padding-right: 40px;
+    list-style: none;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.elementsList {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    justify-content: space-between;
+    width:300px;
+    padding: 10px;
+    cursor: pointer;
+    
+}
+
+.checkbox {
+    cursor: pointer;
+}
+
+.iconsContainer{
+    font-size: larger;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+}

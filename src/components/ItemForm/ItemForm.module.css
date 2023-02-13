@@ -18,6 +18,11 @@
     font-size: large;
 }
 
+::-webkit-input-placeholder{
+    text-align: center;
+    line-height: 100px;/* Centrado vertical */
+}
+
 .buttonContainer{
     display: flex;
     margin-top: 10px;
