@@ -2,8 +2,6 @@
     font-size: medium;
     display: flex;
     flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
 }
 
 .list{
@@ -25,6 +23,7 @@
     justify-content: space-between;
     width:300px;
     padding: 3px;
+    margin: 10px;
     
 }
 
@@ -39,7 +38,7 @@
     padding-top: 5px;
     width: 20px;
     height: 20px;
-    border: 2px solid #9D8189;
+    border: 2px solid #9D8198;
     border-radius: 2px;
     background-color: white;
     cursor: pointer;
@@ -78,7 +77,26 @@
 .noDone {
     text-decoration: none;
 }
+.inputEdit{
+    display: flex;
+    text-align: center;
+}
 
+.inputEditMode{
+    font-family: 'Laila', sans-serif;
+    border-radius: 5px;
+}
+
+.AiOutlineCheck{
+    color: #90AD9C;
+    cursor: pointer;
+}
+
+.AiOutlineClose{
+    color: rgb(255, 116, 116);
+    cursor: pointer;
+
+}
 .iconsContainer{
     font-size: larger;
     cursor: pointer;

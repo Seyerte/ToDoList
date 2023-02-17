@@ -46,11 +46,13 @@ export default function Todolist() {
         setData([...data, newItem]);
     };
 
-    // const editById = (idToEdit, newId) => {
-    //     const
-
-    //     }
-    // };
+    const editById = (itemToUpdate) => {
+        const newData = data.map((item) =>
+            item.id === itemToUpdate.id ? itemToUpdate : item
+        );
+        setData(newData);
+        console.log(itemToUpdate);
+    };
 
     return (
         <div className={styles.mainContainer}>
@@ -62,7 +64,7 @@ export default function Todolist() {
                         key={item.id}
                         item={item}
                         deleteById={deleteById}
-                        // editById={editById}
+                        editById={editById}
                     />
                 ))}
             </ul>
