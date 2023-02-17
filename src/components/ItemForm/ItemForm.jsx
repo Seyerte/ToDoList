@@ -31,13 +31,13 @@ export default function ItemForm({ addItem }) {
                 >
                     Add
                 </button>
-                <button className={styles.buttonUpdate}>Update</button>
+                {/* <button className={styles.buttonUpdate}>Update</button> */}
             </div>
-            <div className={styles.filterItems}>
+            {/* <div className={styles.filterItems}>
                 <button className={styles.buttonAll}>All</button>
                 <button className={styles.buttonPending}>Pending</button>
                 <button className={styles.buttonDone}>Done</button>
-            </div>
+            </div> */}
         </div>
     );
 }

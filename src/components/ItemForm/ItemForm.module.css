@@ -9,9 +9,11 @@
 .inputContainer{
     display: grid;
     place-items: center;
+    
 }
 
 .input {
+    font-family: 'Laila', sans-serif;
     background-color:#ffffff;
     border: solid 2px #9D8189;
     border-radius: 5px;
@@ -38,8 +40,12 @@
     background: #90AD9C;
     border-radius: 10px;
 }
-
-.buttonUpdate {
+.buttonAdd:hover {
+    background-color: #a5c5b5;
+    color: white;
+    cursor: pointer;
+}
+/* .buttonUpdate {
     border: 1px;
     width: 79px;
     height: 34px;
@@ -80,4 +86,4 @@
     top: 51px;
     background: #90AD9C;
     border-radius: 10px;
-}
+} */

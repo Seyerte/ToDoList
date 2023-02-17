@@ -10,10 +10,12 @@
     padding-left: 0px;
     padding-right: 40px;
     list-style: none;
-    font-size: 15px;
+    font-size: 20px;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    height: 50px;
 }
 
 .elementsList {
@@ -22,13 +24,59 @@
     list-style-type: none;
     justify-content: space-between;
     width:300px;
-    padding: 10px;
-    cursor: pointer;
+    padding: 3px;
     
 }
 
+.CheckItem {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
 .checkbox {
+    appearance: none;
+    padding-top: 5px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #9D8189;
+    border-radius: 2px;
+    background-color: white;
     cursor: pointer;
+}
+
+.checkbox:checked {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #90AD9C;
+    border-radius: 2px;
+    background-color: white;
+    position: relative;
+}
+
+.checkbox:checked::before {
+    content: "✔";
+    display: block;
+    text-align: center;
+    font-size: 17px;
+    color: #90AD9C;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.checkbox:checked ~ .noDone {
+    text-decoration: line-through;
+}
+
+.isDone {
+    text-decoration: line-through;  
+}
+
+.noDone {
+    text-decoration: none;
 }
 
 .iconsContainer{

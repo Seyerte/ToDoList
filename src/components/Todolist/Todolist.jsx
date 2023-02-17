@@ -14,7 +14,7 @@ const itemsList = [
     {
         id: "2",
         title: "Call my friend",
-        isDone: true,
+        isDone: false,
     },
     {
         id: "3",
@@ -24,7 +24,7 @@ const itemsList = [
     {
         id: "4",
         title: "Water plants",
-        isDone: true,
+        isDone: false,
     },
 ];
 
@@ -46,13 +46,24 @@ export default function Todolist() {
         setData([...data, newItem]);
     };
 
+    // const editById = (idToEdit, newId) => {
+    //     const
+
+    //     }
+    // };
+
     return (
         <div className={styles.mainContainer}>
             <Navbar />
             <ItemForm addItem={addItem} />
             <ul>
                 {data.map((item) => (
-                    <Item key={item.id} item={item} deleteById={deleteById} />
+                    <Item
+                        key={item.id}
+                        item={item}
+                        deleteById={deleteById}
+                        // editById={editById}
+                    />
                 ))}
             </ul>
         </div>
