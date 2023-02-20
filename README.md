@@ -32,15 +32,6 @@
       style="max-width: 100%"
     />
   </a>
-  <a href="https://nodejs.org" rel="nofollow">
-    <img
-      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
-      alt="nodejs"
-      width="40"
-      height="40"
-      style="max-width: 100%"
-    />
-  </a>
 
 [Link to demo](https://to-do-list-zeta-plum.vercel.app/)
   ## Preview 👀
